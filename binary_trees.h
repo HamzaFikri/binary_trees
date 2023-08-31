@@ -88,4 +88,8 @@ avl_t *avl_remove(avl_t *root, int value);
 avl_t *sorted_array_to_avl(int *array, size_t size);
 int binary_tree_is_heap(const binary_tree_t *tree);
 
+int check_parent(const binary_tree_t *tree);
+int binary_tree_is_complete(const binary_tree_t *tree);
+int tree_is_complete(const binary_tree_t *tree, int i, int cnodes);
+size_t binary_tree_size(const binary_tree_t *tree);
 #endif /* _BINARY_TREES_H_ */
